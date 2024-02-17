@@ -1,60 +1,68 @@
 <!DOCTYPE html>
 
 <html lang="en">
- <head>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./Img/Favicon.jpg">
     <!--Reset default browser stylings-->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!--Font info next three lines-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Protest+Strike&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
     <!--Viewport text to optimize viewing, especially on phones-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title> Stephanie Leon's Portfolio</title>
- </head>
+</head>
 
- <body>
-     <!--Header including the logo and the main navigation-->
+<body>
+    <!--Header including the logo and the main navigation-->
     <header class="page-header">
-         <!--Logo-->
-         <img src="img/Favicon.jpg" class="favicon" alt="Personal logo of Stephanie Leon, a black square with gold uppercase letters that consist of my initials">
-       
+        <!--Logo-->
+        <img src="img/Favicon.jpg" class="favicon"
+            alt="Personal logo of Stephanie Leon, a black square with gold uppercase letters that consist of my initials">
+
         <nav class="main-navigation page-header__item">
-           <ul role="menubar" class="navigation-list">
-               <li role="presentation">
-                   <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-               </li>
-               <li role="presentation">
-                   <a href="about.html" role="menuitem" class="navigation-list__item">About Stephanie Leon</a>
-               </li>
-               <li role="presentation">
-                <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-            </li>
-               <li role="presentation">
-                   <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-               </li>
-           </ul>
-       </nav>
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem" class="navigation-list__item">About Stephanie Leon</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
 
-      <div class="profile">
-        <!--Profile Portrait-->
-        <img src="img/portfolio_picture.jpg" class="profile_portrait" alt="Stephanie Leon's portrait">
+        <div class="profile">
+            <!--Profile Portrait-->
+            <img src="img/portfolio_picture.jpg" class="profile_portrait" alt="Stephanie Leon's portrait">
 
-        <h1>Hello World!</h1>
+            <h1>Hello World!</h1>
 
-        <!-- Need to update this section with more about me -->
-        <p>My name is Stephanie Leon. I am a <span>web</span> developer from the United States.</p>
+            <!-- Need to update this section with more about me -->
+            <p>My name is Stephanie Leon. I am a <span>web</span> developer from the United States.</p>
 
-        <a href="https://github.com/stefleon33" target="_blank">Check out some of my code</a> <br>
+            <a href="https://github.com/stefleon33" target="_blank">Check out some of my code</a> <br>
+
+            <!-- Default link and button-->
+            <!--<a href="#">Default Link</a> -->
 
         <!-- Default link and button-->
         <!--<a href="#">Default Link</a> -->
@@ -63,36 +71,37 @@
      
       </div>
 
+        </div>
+
     </main>
 
-    <!-- Footer with links to social media profiles -->  
+    <!-- Footer with links to social media profiles -->
     <footer class="page-footer">
-    <div class="social-media">
-        <p>Find me on</p>
-
-       <!-- Github logo -->
-       <a href="https://github.com/stefleon33" target="_blank">
-            <img src="img/github_icon.svg" width="30px" height="30px" alt="github logo">
-        </a>
-
         <!-- Twitter logo -->
         <a href="https://twitter.com" target="_blank">
             <img src="img/twitter_icon.svg" width="30px" height="30px" alt="twitter logo">
         </a>
+        <div class="social-media">
+            <p>Find me on</p>
 
-        <!-- LinkedIn logo -->
-        <a href="https://www.linkedin.com/in/stephanie-leon33" target="_blank">
-            <img src="img/linkedin_icon.svg" width="30px" height="30px" alt="linkedin logo">
-        </a><br>
-        <a href="#">Back to top</a>
-     </div>
-     
-     </footer>
+            <!-- Github logo -->
+            <a href="https://github.com/stefleon33" target="_blank" class="social-media">
+                <img src="img/github_icon.svg" width="30px" height="30px" alt="github logo">
+            </a>
 
-    
+            <!-- LinkedIn logo -->
+            <a href="https://www.linkedin.com/in/stephanie-leon33" target="_blank" class="social-media">
+                <img src="img/linkedin_icon.svg" width="30px" height="30px" alt="linkedin logo">
+            </a><br>
+            <a href="#">Back to top</a>
+        </div>
 
-      <!--Tota11y checks HTML accessibility-->
-      <script src="js/tota11y.min.js"></script>
+    </footer>
+
+
+
+    <!--Tota11y checks HTML accessibility-->
+    <script src="js/tota11y.min.js"></script>
 </body>
 
 </html>

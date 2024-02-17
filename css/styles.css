@@ -6,15 +6,7 @@ Primary Color (Orange): #E03400;
 Secondary Color (Blue): #4A68B5;
  */
 
- :root {
-  --primary-color: #E03400;
-  --secondary-color: #4A68B5;
-  --dark-grey: #2b2b2b;
-  --white: #fff;
-  --largerscale: 1.1;
-}
-
-body {
+ body {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-size: 16px;
@@ -75,8 +67,13 @@ footer{
   margin-bottom:0px;
   width:100%;
   text-align: center;
-  background-color: var(--white);
+  background-color: #fff;
+  text-decoration: none;
   }
+
+.social-media{
+  text-decoration: none;
+}
   
 main{
   flex-grow:1;
@@ -120,13 +117,13 @@ svg * {
 
 @keyframes color-change{
   0% {
-    fill: var(--dark-grey);
+    fill: #2b2b2b;
   }
   50% {
-    fill: var(--secondary-color);
+    fill: #4A68B5;
   }
   100% {
-    fill: var(--primary-color);
+    fill: #E03400;
   }
 }
 
@@ -183,12 +180,7 @@ svg * {
   padding: 20px;
   text-align: center;
   border-style: solid;
-  border-color: var(--dark-grey);
-}
-
-.project-list_item:hover{
-  transition: transform 0.25s;
-  transform:scale(var(--largerscale));
+  border-color: #2b2b2b;
 }
 
 .project-list_item:nth-child(5){
@@ -206,7 +198,10 @@ h1 {
   font-weight: bold;
   font-style: normal;
   text-align: center;
-  color: var(--primary-color);
+  color: #E03400;
+  margin: 10px
+}
+
   margin: 10px
 }
 
@@ -234,7 +229,7 @@ label, h2{
     line-height: 0.5;
 }
 
-button, .button {
+button {
     /* overwrites browser defaults and resets the border */
     /* resets the border */
     border: none;
@@ -242,8 +237,8 @@ button, .button {
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-    background-color: var(--secondary-color);
-    color: var(--white);
+    background-color: #4A68B5;
+    color: #fff;
     text-decoration: none;
     /*adds spacing to the button (this will be discussed more in-depth later) */
     padding: 10px;
@@ -254,18 +249,65 @@ button, .button {
     transition: opacity 0.2s;
   }
 
-button:hover, button:focus, .button:hover, .button:focus {
+.button {
+    /* overwrites browser defaults and resets the border */
+    /* resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: #4A68B5;
+    color: #fff;
+    text-decoration: none;
+    /*adds spacing to the button (this will be discussed more in-depth later) */
+    padding: 10px;
+    margin: 5px;
+    border-radius: 3px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: opacity 0.2s;
+  }
+
+button:hover {
     /* lets the mouse appear as a hand when hovering over the button */
     cursor: pointer;
     /* reduces the opacity of the button to 80% */
     opacity: 0.8;
     transition: transform 0.25s;
-    transform:scale(var(--largerscale));
+    transform:scale(1.1);
+  }
+
+button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+    transition: transform 0.25s;
+    transform:scale(1.1);
+  }
+
+.button:hover {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+    transition: transform 0.25s;
+    transform:scale(1.1);
+  }
+
+.button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+    transition: transform 0.25s;
+    transform:scale(1.1);
   }
 
 .button__secondary {
-    background-color: var(--primary-color);
-    color: var(--dark-grey);
+    background-color: #E03400;
+    color: #2b2b2b;
   }
 
 @media all and (max-width: 500px) {
