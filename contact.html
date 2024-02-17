@@ -50,40 +50,38 @@
     </header>
 
     <main>
-    <div>
-        <h1>Contact Stephanie Leon</h1>
+        <div>
+            <h1>Contact Stephanie Leon</h1>
 
-         <!--Contact info needs to be done correctly-->
-        <div class="contact">
-            <label for="email">
-                <h2>Email:</h2>
-                <a href="mailto:stefleon33 at gmail.com">stefleon33 at gmail.com</a><br>
-            </label>
+            <!--Contact info-->
+            <div class="info">
+                <div>
+                    <label for="email">
+                        <h2>Email:</h2>
+                        <a href="mailto:stefleon33@gmail.com">stefleon33@gmail.com</a><br>
+                    </label>
 
-            <label for="phone number">
-                <h2>Phone Number:</h2>
-                <a href="tel:+1 ### ### ####">+1 ### ### ####</a><br>
-            </label>
+                     <p class="contact"><a href="mailto:stefleon33 at gmail.com">Contact me!</a><br></p>
+                </div>
 
-            <a href="mailto:stefleon33 at gmail.com">Contact me!</a><br>
+                <!--Form elements-->
+                <div class="form">
+                    <form action="" method="post" id="contact-form">
+                        <label class="standard-label" for="contact-email">E-mail: </label>
+                        <input type="email" id="contact-email" required><br>
+
+                        <label class="standard-label" for="contact-phone-number">Telephone: </label>
+                        <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-phone-number"><br>
+
+                        <label class="standard-label" for="message">Message: </label>
+                        <textarea maxlength="240" id="message" required></textarea>
+                        <div>
+                            <input class="button" type="submit" value="Send message">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-
-        <!--Form elements-->
-        <div class="form">
-            <form action="" method="post" id="contact-form">
-                <label class="standard-label" for="contact-email">E-mail: </label>
-                <input type="email" id="contact-email" required><br>
-              
-                <label class="standard-label" for="contact-phone-number">Telephone: </label>
-                <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-phone-number"><br>
-              
-                <label class="standard-label" for="message">Message: </label>
-                <textarea maxlength="240" id="message" required></textarea>
-              
-                <input class="button" type="submit" value="Send message">
-              </form>
-        </div>
-    </div>
     </main>
 
     <!-- Footer with links to social media profiles -->
