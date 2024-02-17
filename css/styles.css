@@ -145,9 +145,14 @@ svg * {
 }
 
 /* Contact Page */
-.contact{
-    margin: 10px;
+.info {
+  display: flex;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
   text-align: left;
+  flex-direction: column;
   }
 
 .form{
