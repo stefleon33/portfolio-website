@@ -224,9 +224,10 @@ a {
     color: green;
   }
 
-label, h2{
-    color: var(--secondary-color);
+h2{
+    color: #4A68B5;
     line-height: 0.5;
+    font-size: 20px;
 }
 
 button {
