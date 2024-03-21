@@ -203,6 +203,10 @@ svg * {
   grid-column: 3/3;
   grid-row: 1/3;
 }
+
+.project-images{
+  max-width: 500px;
+}
   
 h1 {
   font-size: 32px;
