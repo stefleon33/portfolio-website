@@ -199,11 +199,6 @@ svg * {
   grid-row: 3/3;
 }
 
-.project-list_item:last-child{
-  grid-column: 3/3;
-  grid-row: 1/3;
-}
-
 .project-images{
   max-width: 500px;
 }
