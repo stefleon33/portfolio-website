@@ -201,6 +201,7 @@ svg * {
 
 .project-images{
   max-width: 500px;
+  max-height: 300px;
 }
   
 h1 {
