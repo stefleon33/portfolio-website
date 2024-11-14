@@ -232,6 +232,12 @@ svg * {
   margin-bottom: 10px;
 }
 
+.project-images__container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 h1 {
   font-size: 32px;
   font-weight: bold;
@@ -431,6 +437,11 @@ button:focus {
   .project-list_item:last-child {
     grid-column: 1 / -1;
   }
+
+  .project-images__container {
+    flex-direction: column;
+  }
+
 }
 
 /* For very small screens (max-width: 500px) */
