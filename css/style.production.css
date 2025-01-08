@@ -316,6 +316,10 @@ button {
     transition: opacity 0.2s;
   }
 
+.work-button{
+  background-color: #fff;
+}
+
 button:hover {
     /* lets the mouse appear as a hand when hovering over the button */
     cursor: pointer;
