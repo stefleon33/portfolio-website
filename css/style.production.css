@@ -43,8 +43,8 @@ Secondary Color (Blue): #2d58ad;
 }
 
 .favicon{
-  width: 210px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
 }
 
 .page-header__item:last-child{
@@ -365,7 +365,10 @@ button:focus {
 
 /* Media Query for screens up to 1024px */
 @media all and (max-width: 1480px) {
-
+  .favicon {
+    width: 200px;
+    height: 200px;
+  }
   .project-list {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
@@ -396,6 +399,10 @@ button:focus {
 
 /* Media Query for screens up to 1024px */
 @media all and (max-width: 1024px) {
+  .favicon {
+    width: 200px;
+    height: 200px;
+  }
 
   .project-list {
     grid-template-columns: repeat(2, 1fr);
@@ -427,6 +434,10 @@ button:focus {
 
 /* Existing styles for smaller screens up to 768px */
 @media all and (max-width: 768px) {
+  .favicon {
+    width: 150px;
+    height: 150px;
+  }
 
   .project-list {
     grid-template-columns: 1fr;
@@ -448,7 +459,10 @@ button:focus {
 
 /* For very small screens (max-width: 500px) */
 @media all and (max-width: 500px) {
-
+  .favicon {
+    width: 150px;
+    height: 150px;
+  }
   .project-list {
     grid-template-columns: 1fr;
   }
