@@ -117,14 +117,15 @@ h2 {
 
 /* Home Page */
 .profile {
-  max-width: 100%;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  place-items: center;
   text-align: center;
 }
 
 .profile_portrait {
   width: 25vw;
- 
   border-radius: 50%;
 }
 
@@ -360,11 +361,6 @@ button:focus {
 
   main {
     padding: 1rem;
-  }
-
-  .profile {
-    max-width: 80%;
-    margin: 0 auto;
   }
 
   .project-images {
