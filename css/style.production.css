@@ -129,50 +129,10 @@ h2 {
 }
 
 /* About Page */
-.table{
-  margin: auto;
-  padding: 1rem;
-  text-align: center;
+}
 }
 
-/*.hometown{
-  text-align:center;
 }
-
-SVG animation info
-
-svg * {
-  transform-box:fill-box;
-}
-
-@keyframes color-change{
-  0% {
-    fill: #2b2b2b;
-  }
-  50% {
-    fill: #4A68B5;
-  }
-  100% {
-    fill: #E03400;
-  }
-}
-
-.statue {
-  animation: 8s color-change infinite alternate linear;
-}
-
-@keyframes skyline-fall{
-  0% {
-    tranform: translate(-200px,100px)
-  }
-  100%{
-    transform: translate(0px,200px);
-  }
-}
-
-.skyline{
-  animation: 4s skyline-fall 2 alternate linear;
-}*/
 
 /* Contact Page */
 .info {
