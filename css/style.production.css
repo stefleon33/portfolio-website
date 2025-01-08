@@ -100,6 +100,21 @@ main {
   overflow-x: hidden;
 }
 
+h1 {
+  font-style: normal;
+  text-align: center;
+  color: #E03400;
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  color: #000;
+  line-height: 0.5;
+  text-align: center;
+}
+
 /* Home Page */
 .profile {
   max-width: 100%;
@@ -243,19 +258,6 @@ svg * {
   margin-bottom: 10px;
 }
 
-
-  
-h1 {
-  font-size: 32px;
-  font-weight: bold;
-  font-style: normal;
-  text-align: center;
-  color: #E03400;
-  margin: 10px;
-  width: 100%;
-  text-align: center;
-}
-
 .caption{
   font-size: 10px;
   font-weight: normal;
@@ -284,11 +286,7 @@ a {
     color: green;
   }
 
-h2{
-    color: #000;
-    line-height: 0.5;
-    font-size: 20px;
-}
+
 
 button {
     /* overwrites browser defaults and resets the border */
@@ -376,10 +374,6 @@ button:focus {
     grid-gap: 15px;
   }
 
-  h1 {
-    font-size: 28px;
-  }
-
   main {
     padding: 1rem;
   }
@@ -411,8 +405,6 @@ button:focus {
     grid-gap: 15px;
   }
 
-  h1 {
-    font-size: 28px;
   }
 
   main {
@@ -445,8 +437,6 @@ button:focus {
     grid-template-columns: 1fr;
   }
 
-  h1 {
-    font-size: 22px;
   }
 
   .project-list_item:last-child {
@@ -469,8 +459,6 @@ button:focus {
     grid-template-columns: 1fr;
   }
 
-  h1 {
-    font-size: 18px;
   }
 
   .project-list_item:last-child {
