@@ -130,6 +130,20 @@ h2 {
 }
 
 /* About Page */
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.about-image {
+  width: 500px;
+  height: auto;
+  justify-self: center;
+  align-self: center;
+}
+
 .skills {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -396,6 +410,14 @@ button:focus {
 
   .profile {
     max-width: 80%;
+    margin: 0 auto;
+
+  .about-section{
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    max-width: 400px;
     margin: 0 auto;
   }
 
