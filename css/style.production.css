@@ -3,14 +3,14 @@ Colors used
 
 Text Color (Dark Gray): #2b2b2b;
 Primary Color (Orange): #E03400;
-Secondary Color (Blue): #2d58ad;
+Secondary Color (light orange ): #f2ad99;
  */
 
  body {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: normal;
   font-style: normal;
   line-height: 1.5;
   color: #2b2b2b;
@@ -81,6 +81,7 @@ footer{
   text-decoration: none;
   padding: 1rem;
   box-sizing: border-box;
+  background-color: #f5c2b2;
   }
 
 .social-media{
@@ -110,8 +111,7 @@ h1 {
 }
 
 h2 {
-  color: #000;
-  line-height: 0.5;
+  color: #E03400;
   text-align: center;
 }
 
@@ -177,14 +177,10 @@ h2 {
   margin-right: auto;
   padding: 1rem;
   text-align: left;
-  flex-direction: column;
-}
   align-items: center;
   gap: 1rem;
 }
 
-.form{
-  line-height: 2;
 .contact-photo {
   width:400px;
   height: auto;
@@ -211,8 +207,8 @@ h2 {
 }
 
 .project-list_item{
-  background-color: #aebae9;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   width: 100%;
   max-width: 100%;
   margin: 0;
@@ -224,11 +220,15 @@ h2 {
   place-items: center;
 }
 
+.project-list-title{
+  color: #fff;
+}
+
 .users-paragraph{
   text-align: left;
   max-width: 500px;
   align-items: left;
-  place-items: left;
+  place-items: left
 }
 
 .work-links{
@@ -238,6 +238,7 @@ h2 {
 .project-list_item:last-child{
   grid-column: 1 / -1;;
   grid-row: auto;
+  margin-bottom: 15px;
 }
 
 .project-images__container {
@@ -254,15 +255,6 @@ h2 {
   max-height: 300px;
   object-fit: contain;
   margin-bottom: 10px;
-}
-
-.caption{
-  font-size: 10px;
-  font-weight: normal;
-  font-style: normal;
-  text-align: center;
-  color: #2b2b2b;
-  margin: 10px
 }
 
 a {
@@ -284,8 +276,6 @@ a {
     color: green;
   }
 
-
-
 button {
     /* overwrites browser defaults and resets the border */
     /* resets the border */
@@ -294,8 +284,8 @@ button {
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-    background-color: #4A68B5;
-    color: #fff;
+    background-color: #fff;
+    color: blue;
     text-decoration: none;
     /*adds spacing to the button (this will be discussed more in-depth later) */
     padding: 10px;
@@ -314,8 +304,8 @@ button {
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-    background-color: #4A68B5;
-    color: #fff;
+    background-color: #fff;
+    color: blue;
     text-decoration: none;
     /*adds spacing to the button (this will be discussed more in-depth later) */
     padding: 10px;
@@ -361,12 +351,13 @@ button:focus {
     color: #2b2b2b;
   }
 
-/* Media Query for screens up to 1024px */
+/* Media Query for screens up to 1480px */
 @media all and (max-width: 1480px) {
   .favicon {
     width: 200px;
     height: 200px;
   }
+
   .project-list {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
@@ -410,6 +401,9 @@ button:focus {
   .profile {
     max-width: 80%;
     margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
 
   .about-section{
     grid-template-columns: 1fr;
