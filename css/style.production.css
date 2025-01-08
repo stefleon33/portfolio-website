@@ -168,28 +168,27 @@ h2 {
 }
 
 /* Contact Page */
-.info {
-  display: flex;
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
-  line-height: 1.5;
-  max-width: 600px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   padding: 1rem;
   text-align: left;
   flex-direction: column;
 }
-
-.contact {
-  color: #4A68B5;
-  line-height: 0.5;
-  font-size: 20px;
-  font-weight: normal;
-  font-style: normal;
+  align-items: center;
+  gap: 1rem;
 }
 
 .form{
   line-height: 2;
+.contact-photo {
+  width:400px;
+  height: auto;
+  justify-self: center;
 }
 
 /* Work Page Grid */
@@ -453,6 +452,11 @@ button:focus {
   
   .project-images__container {
     flex-direction: column;
+  }
+
+  .contact{
+    grid-template-columns: 1fr;
+    text-align: center;
   }
   
 }
