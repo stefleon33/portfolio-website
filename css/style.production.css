@@ -276,26 +276,6 @@ a {
     color: green;
   }
 
-button {
-    /* overwrites browser defaults and resets the border */
-    /* resets the border */
-    border: none;
-    display: inline-block;
-    /* takes the font from the outer container */
-    font-family: inherit;
-    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-    background-color: #fff;
-    color: blue;
-    text-decoration: none;
-    /*adds spacing to the button (this will be discussed more in-depth later) */
-    padding: 10px;
-    margin: 5px;
-    border-radius: 3px;
-    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    transition: opacity 0.2s;
-  }
-
 .button {
     /* overwrites browser defaults and resets the border */
     /* resets the border */
@@ -304,7 +284,7 @@ button {
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-    background-color: #fff;
+    background-color: #f2ad99;
     color: blue;
     text-decoration: none;
     /*adds spacing to the button (this will be discussed more in-depth later) */
