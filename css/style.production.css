@@ -163,7 +163,7 @@ h2 {
   padding: 1rem;
   text-align: left;
   flex-direction: column;
-  }
+}
 
 .contact {
   color: #4A68B5;
@@ -213,6 +213,12 @@ h2 {
 .users-paragraph{
   text-align: left;
   max-width: 500px;
+  align-items: left;
+  place-items: left;
+}
+
+.work-links{
+  text-align: center;
 }
 
 .project-list_item:last-child{
@@ -414,10 +420,13 @@ button:focus {
     height: 150px;
   }
 
-  .project-list {
-    grid-template-columns: 1fr;
+  .skills {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
   }
 
+  .project-list {
+    grid-template-columns: 1fr;
   }
 
   .project-list_item:last-child {
