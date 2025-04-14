@@ -88,7 +88,11 @@ footer{
   text-decoration: none;
 }
 
-.profile, .about, .contact {
+.profile, 
+.about, 
+.contact, 
+.project-intro, 
+.promptalchemy-paragraph {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -207,21 +211,38 @@ h2 {
 }
 
 .project-list_item{
-  background-color: #000;
+  background-color: #3b3b3b;
   color: #fff;
   width: 100%;
   max-width: 100%;
   margin: 0;
-  padding: 20px;
+  padding: 2rem;
   text-align: left;
-  border: solid 1px #2b2b2b;
+ 
   box-sizing: border-box;
   display: block;
   place-items: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .project-list-title{
   color: #fff;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.users-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.users-container .users-paragraph {
+  flex: 1;
+  min-width: 280px;
 }
 
 .users-paragraph{
@@ -235,10 +256,9 @@ h2 {
   text-align: center;
 }
 
-.project-list_item:last-child{
+.project-list_item:first-child{
   grid-column: 1 / -1;;
   grid-row: auto;
-  margin-bottom: 15px;
 }
 
 .project-images__container {
@@ -246,6 +266,10 @@ h2 {
   justify-content: center;
   gap: 20px;
   max-width: 800px;
+}
+.promptalchemy .project-images {
+  max-width: 500px;
+  max-height: 400px;
 }
 
 .project-images{
@@ -255,6 +279,18 @@ h2 {
   max-height: 300px;
   object-fit: contain;
   margin-bottom: 10px;
+}
+
+.chingu-link {
+  color: white;
+}
+
+.project-cta {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
 }
 
 a {

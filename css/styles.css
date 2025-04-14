@@ -3,14 +3,14 @@ Colors used
 
 Text Color (Dark Gray): #2b2b2b;
 Primary Color (Orange): #E03400;
-Secondary Color (Blue): #2d58ad;
+Secondary Color (light orange ): #f2ad99;
  */
 
 body {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: normal;
   font-style: normal;
   line-height: 1.5;
   color: #2b2b2b;
@@ -34,8 +34,10 @@ body {
 .page-header {
   display: flex;
   width: 100%;
-  padding: 1vw;
   box-sizing: border-box;
+  background-color: #fff;
+  font-weight: bold;
+  font-size: large;
 }
 
 .page-header__item {
@@ -43,8 +45,8 @@ body {
 }
 
 .favicon {
-  width: 210px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
 }
 
 .page-header__item:last-child {
@@ -58,7 +60,8 @@ body {
 
 .navigation-list li {
   display: inline-block;
-  margin-left: 15px;
+  margin-top: 30px;
+  margin-right: 15px;
 }
 
 .navigation-list__item--active {
@@ -75,10 +78,10 @@ footer {
   margin-bottom: 0px;
   width: 100%;
   text-align: center;
-  background-color: #fff;
   text-decoration: none;
   padding: 1rem;
   box-sizing: border-box;
+  background-color: #f5c2b2;
 }
 
 .social-media {
@@ -87,7 +90,9 @@ footer {
 
 .profile,
 .about,
-.contact {
+.contact,
+.project-intro,
+.promptalchemy-paragraph {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -100,88 +105,91 @@ main {
   overflow-x: hidden;
 }
 
+h1 {
+  font-style: normal;
+  text-align: center;
+  color: #E03400;
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  color: #E03400;
+  text-align: center;
+}
+
 /* Home Page */
 .profile {
-  max-width: 100%;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  place-items: center;
   text-align: center;
 }
 
 .profile_portrait {
   width: 25vw;
-  margin-right: 2rem;
   border-radius: 50%;
 }
 
 /* About Page */
-.table {
-  margin: auto;
-  padding: 1rem;
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.about-image {
+  width: 500px;
+  height: auto;
+  justify-self: center;
+  align-self: center;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.skills_title {
   text-align: center;
 }
 
-/*.hometown{
-  text-align:center;
+.skills_list {
+  color: #000;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  text-align: left;
+  box-sizing: border-box;
+  display: block;
 }
-
-SVG animation info
-
-svg * {
-  transform-box:fill-box;
-}
-
-@keyframes color-change{
-  0% {
-    fill: #2b2b2b;
-  }
-  50% {
-    fill: #4A68B5;
-  }
-  100% {
-    fill: #E03400;
-  }
-}
-
-.statue {
-  animation: 8s color-change infinite alternate linear;
-}
-
-@keyframes skyline-fall{
-  0% {
-    tranform: translate(-200px,100px)
-  }
-  100%{
-    transform: translate(0px,200px);
-  }
-}
-
-.skyline{
-  animation: 4s skyline-fall 2 alternate linear;
-}*/
 
 /* Contact Page */
-.info {
-  display: flex;
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
-  line-height: 1.5;
-  max-width: 600px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   padding: 1rem;
   text-align: left;
-  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
-.contact {
-  color: #4A68B5;
-  line-height: 0.5;
-  font-size: 20px;
-  font-weight: normal;
-  font-style: normal;
-}
-
-.form {
-  line-height: 2;
+.contact-photo {
+  width: 400px;
+  height: auto;
+  justify-self: center;
 }
 
 /* Work Page Grid */
@@ -205,25 +213,52 @@ svg * {
 }
 
 .project-list_item {
-  background-color: #aebae9;
-  color: #000;
+  background-color: #3b3b3b;
+  color: #fff;
   width: 100%;
   max-width: 100%;
   margin: 0;
-  padding: 20px;
+  padding: 2rem;
   text-align: left;
-  border: solid 1px #2b2b2b;
+
   box-sizing: border-box;
   display: block;
   place-items: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.project-list-title {
+  color: #fff;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.users-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.users-container .users-paragraph {
+  flex: 1;
+  min-width: 280px;
 }
 
 .users-paragraph {
   text-align: left;
   max-width: 500px;
+  align-items: left;
+  place-items: left
 }
 
-.project-list_item:last-child {
+.work-links {
+  text-align: center;
+}
+
+.project-list_item:first-child {
   grid-column: 1 / -1;
   ;
   grid-row: auto;
@@ -236,6 +271,11 @@ svg * {
   max-width: 800px;
 }
 
+.promptalchemy .project-images {
+  max-width: 500px;
+  max-height: 400px;
+}
+
 .project-images {
   width: 100%;
   height: auto;
@@ -245,26 +285,16 @@ svg * {
   margin-bottom: 10px;
 }
 
-
-
-h1 {
-  font-size: 32px;
-  font-weight: bold;
-  font-style: normal;
-  text-align: center;
-  color: #E03400;
-  margin: 10px;
-  width: 100%;
-  text-align: center;
+.chingu-link {
+  color: white;
 }
 
-.caption {
-  font-size: 10px;
-  font-weight: normal;
-  font-style: normal;
+.project-cta {
   text-align: center;
-  color: #2b2b2b;
-  margin: 10px
+  padding: 2rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
 }
 
 a {
@@ -289,32 +319,6 @@ a:active {
   color: green;
 }
 
-h2 {
-  color: #000;
-  line-height: 0.5;
-  font-size: 20px;
-}
-
-button {
-  /* overwrites browser defaults and resets the border */
-  /* resets the border */
-  border: none;
-  display: inline-block;
-  /* takes the font from the outer container */
-  font-family: inherit;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #4A68B5;
-  color: #fff;
-  text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
-  padding: 10px;
-  margin: 5px;
-  border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  transition: opacity 0.2s;
-}
-
 .button {
   /* overwrites browser defaults and resets the border */
   /* resets the border */
@@ -323,8 +327,8 @@ button {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #4A68B5;
-  color: #fff;
+  background-color: #f2ad99;
+  color: blue;
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
@@ -333,6 +337,10 @@ button {
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: opacity 0.2s;
+}
+
+.work-button {
+  background-color: #fff;
 }
 
 button:hover {
@@ -370,25 +378,20 @@ button:focus {
   color: #2b2b2b;
 }
 
-/* Media Query for screens up to 1024px */
+/* Media Query for screens up to 1480px */
 @media all and (max-width: 1480px) {
+  .favicon {
+    width: 200px;
+    height: 200px;
+  }
 
   .project-list {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
   }
 
-  h1 {
-    font-size: 28px;
-  }
-
   main {
     padding: 1rem;
-  }
-
-  .profile {
-    max-width: 80%;
-    margin: 0 auto;
   }
 
   .project-images {
@@ -403,14 +406,19 @@ button:focus {
 
 /* Media Query for screens up to 1024px */
 @media all and (max-width: 1024px) {
+  .favicon {
+    width: 200px;
+    height: 200px;
+  }
 
   .project-list {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
   }
 
-  h1 {
-    font-size: 28px;
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
   }
 
   main {
@@ -419,6 +427,17 @@ button:focus {
 
   .profile {
     max-width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    max-width: 400px;
     margin: 0 auto;
   }
 
@@ -434,13 +453,18 @@ button:focus {
 
 /* Existing styles for smaller screens up to 768px */
 @media all and (max-width: 768px) {
+  .favicon {
+    width: 150px;
+    height: 150px;
+  }
+
+  .skills {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+  }
 
   .project-list {
     grid-template-columns: 1fr;
-  }
-
-  h1 {
-    font-size: 22px;
   }
 
   .project-list_item:last-child {
@@ -451,17 +475,27 @@ button:focus {
     flex-direction: column;
   }
 
+  .contact {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
 }
 
 /* For very small screens (max-width: 500px) */
 @media all and (max-width: 500px) {
+  .favicon {
+    width: 150px;
+    height: 150px;
+  }
 
   .project-list {
     grid-template-columns: 1fr;
   }
 
-  h1 {
-    font-size: 18px;
+  .skills {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
   }
 
   .project-list_item:last-child {
